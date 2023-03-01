@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>
-            这是Child组件1345678901
+            这是Child组件1
         </h1>
     </div>
 </template>
