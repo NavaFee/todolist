@@ -10,7 +10,7 @@
 import NavHeader from '@/components/navHeader/NavHeader.vue';
 import NavFooter from '@/components/navFooter/NavFooter.vue';
 import NavMain from '@/components/navMain/NavMain.vue';
-import { DefineComponent, computed, ref } from 'vue';
+import { defineComponent, computed, ref } from 'vue';
 import { useStore } from 'vuex';
 
 export default defineComponent({

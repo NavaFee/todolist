@@ -20,7 +20,7 @@ const routes = [
   },
   {
     path: '/home',
-    name: 'home',
+    name: 'Home',
     //按需引入
     //如果没有访问/home，就不会加载此组件，节约性能
     component:()=>import('../views/HomeView.vue')
@@ -33,10 +33,10 @@ const routes = [
     component:()=>import('../views/DetailView.vue')
   }
 ]
-
+//创建路由对象
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes //routes : routes 的简写
 })
 
 export default router

@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-import { DefineComponent, ref } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
     name : 'navHeader',
