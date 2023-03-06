@@ -20,7 +20,7 @@ const routes = [
   },
   {
     path: '/home',
-    name: 'Home',
+    name: 'home',
     //按需引入
     //如果没有访问/home，就不会加载此组件，节约性能
     component:()=>import('../views/HomeView.vue')
