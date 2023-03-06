@@ -1,7 +1,31 @@
 <template>
     <div>
-        <h1>
-            这是Child组件1
-        </h1>
+        <input placeholder="请输入任务名称" v-model="value" @keydown.enter="enter" />
     </div>
 </template>
+<script>
+import { DefineComponent, ref } from 'vue';
+
+export default defineComponent({
+    name : 'navHeader',
+    setup(props,ctx){
+        let value=ref('')
+        //按回车确认
+        let enter=()=>{
+            //把输入框中的东西传给父组件
+            ctx.emit('add',value.value)
+            value.value=''
+        }
+        return{
+            value,
+            enter
+        }
+    }
+})
+</script>
+
+<style scoped lang="scss">
+input{
+    margin-bottom: 10px;
+}
+</style>
